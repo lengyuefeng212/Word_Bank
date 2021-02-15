@@ -1,0 +1,109 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 冷月枫, 1, LIC=76FRA-1PGQD-NATDU-S5GLQ-EKBDT-97B3U
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  D:\Keil5\keil5STM32\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\冷月枫\Desktop\字库烧写\luatao.uvprojx
+Project File Date:  02/09/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+.\App\command.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\App\bsp_spi_flash.h(93): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\stm32f10x_it.c: 2 warnings, 0 errors
+compiling main.c...
+.\App\command.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\App\bsp_spi_flash.h(93): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\main.c(93): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+                        SPI_FLASH_BufferWrite(Usart1_RxBuff, writeaddr, Usart1_RxCounter);      
+User\main.c(23): warning:  #177-D: variable "status" was declared but never referenced
+        char status; 
+User\main.c: 4 warnings, 0 errors
+compiling LED.c...
+.\App\command.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\App\bsp_spi_flash.h(93): warning:  #1-D: last line of file ends without a newline
+  #endif
+App\LED.c: 2 warnings, 0 errors
+compiling USART1.c...
+.\App\command.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\App\bsp_spi_flash.h(93): warning:  #1-D: last line of file ends without a newline
+  #endif
+App\USART1.c(101): warning:  #177-D: variable "res" was declared but never referenced
+        uint8_t res;
+App\USART1.c: 3 warnings, 0 errors
+compiling key.c...
+.\App\command.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\App\bsp_spi_flash.h(93): warning:  #1-D: last line of file ends without a newline
+  #endif
+App\key.c: 2 warnings, 0 errors
+compiling command.c...
+.\App\command.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\App\bsp_spi_flash.h(93): warning:  #1-D: last line of file ends without a newline
+  #endif
+App\command.c(224): warning:  #177-D: variable "warn" was declared but never referenced
+        uchar warn[] = "There is no corresponding command\r\n";  //没有对应的命令警告语
+App\command.c(285): warning:  #177-D: variable "writeaddr" was declared but never referenced
+        static uint32_t writeaddr  = 0;
+App\command.c: 4 warnings, 0 errors
+compiling bsp_spi_flash.c...
+.\App\command.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\App\bsp_spi_flash.h(93): warning:  #1-D: last line of file ends without a newline
+  #endif
+App\bsp_spi_flash.c(520): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+        len1 = strlen(pBuffer2);  // 获取固定命令的长度进行判断 ,这个数据小于等于接收到的数据的长度
+App\bsp_spi_flash.c(526): warning:  #68-D: integer conversion resulted in a change of sign
+                  return -1;  
+App\bsp_spi_flash.c: 4 warnings, 0 errors
+compiling System.c...
+.\App\command.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\App\bsp_spi_flash.h(93): warning:  #1-D: last line of file ends without a newline
+  #endif
+Public\System.c: 2 warnings, 0 errors
+compiling SysTick.c...
+.\App\command.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\App\bsp_spi_flash.h(93): warning:  #1-D: last line of file ends without a newline
+  #endif
+Public\SysTick.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=9284 RO-data=628 RW-data=88 ZI-data=1672  
+FromELF: creating hex file...
+".\Obj\luatao.axf" - 0 Error(s), 25 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\冷月枫\Desktop\字库烧写\RTE
+  D:\Keil5\keil5STM32\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
